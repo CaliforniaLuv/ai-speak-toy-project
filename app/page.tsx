@@ -25,6 +25,7 @@ export default function Home() {
   const [displaySettings, setDisplaySettings] = useState(false);
 
   useEffect(() => {
+    if (state.code === null) return; // 첫 진입 시에는 실행하지 않음
     if (state.code !== ApiResponseCode.SUCCESS) {
       alert(state.response);
       return;
