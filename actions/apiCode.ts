@@ -1,0 +1,7 @@
+export enum ApiResponseCode {
+  SUCCESS = "SUS200",
+  KEY_NOT_FOUND = "ERR100",
+  AUDIO_FILE_NOT_FOUND = "ERR400",
+  AUDIO_API_ERROR = "ERR401",
+  CHAT_API_ERROR = "ERR402",
+}
